@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+html {
+  font-size: 10px; /* 1rem --> 10px */
+}
+body {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #cadbe2, #d100ff, rgb(110 6 139));
+}
+.quizContainer {
+  width: 40vw;
+  min-width: 250px;
+  padding: 2rem;
+  border-radius: 1rem;
+  background-color: white;
+}
+.quizContainer h1 {
+  font-size: 3rem;
+  border-bottom: 1px solid rgb(185, 170, 170);
+  margin-bottom: 1.5rem;
+}
+
+.quiz .question h3 {
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin: 1.5rem 0 1.5rem 1rem;
+}
+.quiz .multipleChoice ul {
+  font-size: 1.4rem;
+  padding-left: 1rem;
+  list-style-type: none;
+}
+.multipleChoice ul li {
+  margin: 1rem 0;
+  padding: 0.5rem 1rem;
+  border: 2px solid rgb(200, 200, 207);
+  border-radius: 0.45rem;
+  cursor: pointer;
+  transition: background-color 0.35s ease;
+}
+.multipleChoice ul li:hover {
+  background-color: #dedcdc;
+}
+
+.quiz .submit {
+  text-align: center;
+}
+.submit input {
+  width: 90%;
+  margin-top: 2.5rem;
+  padding: 0.5rem 0;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 1.4rem;
+  color: white;
+  background: rgb(0 32 255);
+  cursor: pointer;
+  transition: all 0.35s ease-out;
+}
+.submit input:hover {
+  background-color: rgb(54, 81, 255);
+}
