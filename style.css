@@ -14,7 +14,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(135deg, #cadbe2, #d100ff, rgb(110 6 139));
+  background: linear-gradient(135deg, #416aff, #3a6ccf, rgb(6, 1, 57));
 }
 .quizContainer {
   width: 40vw;
@@ -40,19 +40,22 @@ body {
   list-style-type: none;
 }
 .multipleChoice ul li {
-  margin: 1rem 0;
-  padding: 0.5rem 1rem;
-  border: 2px solid rgb(200, 200, 207);
+  margin: 1.5rem 0;
+  padding: 0.8rem 1rem;
+  border: 1px solid rgb(200, 200, 207);
   border-radius: 0.45rem;
   cursor: pointer;
-  transition: background-color 0.35s ease;
+  transition: all 0.35s ease-in-out;
 }
 .multipleChoice ul li:hover {
-  background-color: #dedcdc;
+  transform: scale(1.01);
+  background-color: #f1f1f1;
+  box-shadow: 1px 1px 8px 0px #c7c7c7;
 }
 
 .quiz .submit {
   text-align: center;
+  display: none;
 }
 .submit input {
   width: 90%;
