@@ -77,7 +77,6 @@ let multiChoiceArr = [
 ]
 let correctArr = [1, 2, 2, 3, 2, 3, 1, 1, 3, 1]
 
-
 let question = document.querySelector(".question")
 let answers = document.querySelector(".multipleChoice")
 let answersContainer = document.getElementsByTagName("li")
@@ -130,8 +129,16 @@ window.addEventListener("DOMContentLoaded", () => {
 })
 
 // event listener to nextBtn
+let correctScore = 0
 nextBtn.addEventListener("click", () => {
     //  loads next Q/A + adds Event listener to each answer 
+    Array.from(answersContainer).forEach(e => {
+        if (e.classList.contains("selected")) {
+            if (e.textContent.trim() == multiChoiceArr[qNo - 1][correctArr[qNo - 1]]) {
+                correctScore++
+            }
+        }
+    })
 
     if (qNo < questionArr.length) {
         question.innerHTML = ` <h3> <span>${qNo + 1}</span>. ${questionArr[qNo]}</h3>`
@@ -147,7 +154,11 @@ nextBtn.addEventListener("click", () => {
         select(answerArr)
         nextBtn.style.display = "none"
         qNo++
-    } else {
-        qNo = 0;
+
+    } else if (qNo == questionArr.length) {
+        question.innerHTML = ` <h3> Awesome, You played it well!!</h3>`
+        answers.innerHTML = `<p> You scored  <span>${correctScore}/10</span></p>`
+        nextBtn.style.display = "none"
     }
 })
+

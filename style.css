@@ -18,7 +18,7 @@ body {
 }
 .quizContainer {
   width: 40vw;
-  min-width: 250px;
+  min-width: 300px;
   padding: 2rem;
   border-radius: 1rem;
   background-color: white;
@@ -27,6 +27,7 @@ body {
   font-size: 3rem;
   border-bottom: 1px solid rgb(185, 170, 170);
   margin-bottom: 1.8rem;
+  padding: 0.8rem 0;
 }
 
 .quiz .question h3 {
@@ -51,6 +52,21 @@ body {
   transform: scale(1.03);
   /* background-color: #e9e9e9; */
   box-shadow: 1px 1px 8px 0px #c7c7c7;
+}
+
+/* score */
+.multipleChoice p {
+  font-size: 2rem;
+  padding-left: 1.5rem;
+  margin: 3rem 0;
+}
+.multipleChoice p span {
+  color: blue;
+  font-size: 2.5rem;
+  font-weight: 600;
+  padding: 1.5rem;
+  border-radius: 50%;
+  border: 2px solid green;
 }
 
 .quiz .submit {
