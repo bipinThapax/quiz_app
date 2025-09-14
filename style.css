@@ -26,7 +26,7 @@ body {
 .quizContainer h1 {
   font-size: 3rem;
   border-bottom: 1px solid rgb(185, 170, 170);
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.8rem;
 }
 
 .quiz .question h3 {
@@ -45,11 +45,11 @@ body {
   border: 1px solid rgb(200, 200, 207);
   border-radius: 0.45rem;
   cursor: pointer;
-  transition: all 0.35s ease-in-out;
+  transition: all 0.25s ease-in-out;
 }
 .multipleChoice ul li:hover {
-  transform: scale(1.01);
-  background-color: #f1f1f1;
+  transform: scale(1.03);
+  /* background-color: #e9e9e9; */
   box-shadow: 1px 1px 8px 0px #c7c7c7;
 }
 
@@ -59,7 +59,7 @@ body {
 }
 .submit input {
   width: 90%;
-  margin-top: 2.5rem;
+  margin-top: 1rem;
   padding: 0.5rem 0;
   border: none;
   border-radius: 0.5rem;
